@@ -298,6 +298,16 @@ body::before {
     color: black;
     font-weight: bold;
   }
+.pyq{
+    z-index: 13;
+    position: relative;
+    bottom:2050px;
+    
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s; /* Delay the animation by 2 seconds */
+    
+  }
   
   
   
