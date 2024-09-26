@@ -74,6 +74,7 @@ body::before {
 
 }
 .container {
+    z-index: 15;
     width: 100%;
     position: relative;
     margin: 0 auto;
