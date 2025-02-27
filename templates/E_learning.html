@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/E_learning.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/campusconnectlogowithouttext.png') }}" alt="Campus Connect Logo">
+                <h1>CampusConnect</h1>
+            </div>
+            <ul class="nav">
+                <li><a href="/components/index.html">Home</a></li>
+                <li><a href="/components/eventcalendar.html">Event Calendar</a></li>
+                <li><a href="#">Internship</a></li>
+                <li><a href="#">E-Learning</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="one"><h1>WELCOME TO E-LEARNING SECTION</h1></div>
+    </div>
+
+    <div class="container-2">
+        <div class="subject"><h2>SELECT THE SUBJECT YOU WANT TO LEARN</h2></div>
+    </div>
+
+    <div class="container-3">
+        <a href="https://www.youtube.com/watch?v=PG_-ax_HmS0&list=PLT3bOBUU3L9h9szuMk1IAkLoxpz8DYttt"><div class="a1">MATHEMATICS-IV</div></a>
+        <a href="https://www.youtube.com/watch?v=IfX4BT7HRNo&list=PL0s3O6GgLL5es3eh6-E4JVnymMqZKRAHH"><div class="a2">MICROPROCESSOR</div></a>
+        <a href="https://www.youtube.com/watch?v=vuml3u_sX-E&list=PL30dC-5PIyXljRGbjvZ-mG8OITMESqxuj"><div class="a3">AOA</div></a>
+    </div>
+
+    <div class="container-4">
+        <a href="https://www.youtube.com/watch?v=YBb2oYIzXK0&list=PLxCzCOWd7aiH2wwES9vPWsEL6ipTaUSl3"><div class="b1">DBMS</div></a>
+        <a href="https://www.youtube.com/watch?v=uTBKa1PSyf8&list=PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T"><div class="b2">OPERATING SYS</div></a>
+        <a href="https://www.youtube.com/watch?v=eWHzz-WHQh4"><div class="b3">PYTHON</div></a>
+    </div>
+
+    <div class="eb"><h2>SELECT THE SUBJECT E-BOOKS YOU WANT TO DOWNLOAD</h2></div>
+
+    <div class="container-5">
+        <div class="a1 s" onclick="downloadPDF('mathematics-iv')">MATHEMATICS-IV</div>
+        <div class="a2 s" onclick="downloadPDF('microprocessor')">MICROPROCESSOR</div>
+        <div class="a3 s" onclick="downloadPDF('aoa')">AOA</div>
+    </div>
+
+    <div class="container-6">
+        <div class="b1 s" onclick="downloadPDF('dbms')">DBMS</div>
+        <div class="b2 s" onclick="downloadPDF('operating-sys')">OPERATING SYS</div>
+        <div class="b3 s" onclick="downloadPDF('python')">PYTHON</div>
+    </div>
+
+    <a href="https://muquestionpapers.com/be/computer-engineering/semester-3">
+        <div class="pyq">Click Here To Download Previous Year Question Papers</div>
+    </a>
+
+    <script>
+        function downloadPDF(subject) {
+            window.location.href = "/download/" + subject;
+        }
+    </script>
+</body>
+</html>
